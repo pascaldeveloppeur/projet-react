@@ -1,11 +1,16 @@
 
 import './App.css'
+import Message from './components/Message'
 
 function App() {
 
   return (
     <>
-      <h1>Formation React</h1>
+      <section>
+        <Message firstName='Pascal' lastName='Yakou' email='pascal@gmail'/>
+        <Message firstName='Jean' lastName='Pierre'/>
+        <Message firstName='Marc' lastName='Yakou'/>
+      </section>
     </>
   )
 }
