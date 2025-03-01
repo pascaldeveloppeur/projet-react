@@ -1,17 +1,16 @@
 
 import './App.css'
-import Message from './components/Message'
+import Users from './pages/Users'
+import { USERS } from './utils/data'
+
+
 
 function App() {
 
   return (
-    <>
-      <section>
-        <Message firstName='Pascal' lastName='Yakou' email='pascal@gmail'/>
-        <Message firstName='Jean' lastName='Pierre'/>
-        <Message firstName='Marc' lastName='Yakou'/>
-      </section>
-    </>
+    <section className="container text-center">
+      <Users users={USERS} />
+    </section>
   )
 }
 
