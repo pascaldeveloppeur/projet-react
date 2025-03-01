@@ -1,6 +1,7 @@
 import User from "../components/User";
 
 type User = {
+    _id:string;  
     name: string;
     age: number;
     gender: string;
@@ -14,14 +15,14 @@ type UsersProps = {
 };
 
 function Users(props: UsersProps) {
-    const users = props.users;
+    const listUsers = props.users;
   return (
-    <div>
-        {users.map((user) => (
-            <User name={user.name} age={user.age} gender={user.gender} email={user.email} phone={user.phone} address={user.address} />
+    <>
+        {listUsers.map((user) => (
+            <User key={user._id} name={user.name} age={user.age} gender={user.gender} email={user.email} phone={user.phone} address={user.address} />
         ))}
           
-    </div>
+    </>
   );
 }
 

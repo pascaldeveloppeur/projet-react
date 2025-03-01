@@ -8,9 +8,12 @@ import { USERS } from './utils/data'
 function App() {
 
   return (
-    <section className="container text-center">
-      <Users users={USERS} />
-    </section>
+    <>
+      <section className="grid">
+          <Users users={USERS} />
+      </section>
+      
+    </>
   )
 }
 

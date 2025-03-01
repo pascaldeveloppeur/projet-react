@@ -1,4 +1,5 @@
 type Props = {
+_id?:string;  
   name: string;
   age: number;
   gender: string;
@@ -9,16 +10,19 @@ type Props = {
 
 function User(props: Props) {
   return (
-    <article className="row row-cols-2 ">
-       <div className="col">
-            <h3>{props.name} {props.age}</h3>
-            <p>{props.gender}</p>
-            <p>{props.email}</p>
-            <p>{props.phone}</p>
-            <p>{props.address}</p>
-       </div> 
+    <>
+        <article className="User">
+       
+                <h3>{props.name} {props.age}</h3>
+                <p>{props.gender}</p>
+                <p>{props.email}</p>
+                <p>{props.phone}</p>
+                <p>{props.address}</p>
       
-    </article>
+        
+        </article>
+    </>
+    
   );
 }
 
