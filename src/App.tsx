@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <section className="grid">
+      <section className="container mx-auto">
           <Users users={USERS} />
       </section>
       

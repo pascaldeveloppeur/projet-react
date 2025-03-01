@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .User{
     border: 2px solid #cdcdcd;
     padding: 5px;
@@ -7,5 +11,5 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    grid-gap: 5px;
 }

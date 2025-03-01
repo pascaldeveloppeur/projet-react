@@ -17,12 +17,12 @@ type UsersProps = {
 function Users(props: UsersProps) {
     const listUsers = props.users;
   return (
-    <>
+    <div className="grid">
         {listUsers.map((user) => (
             <User key={user._id} name={user.name} age={user.age} gender={user.gender} email={user.email} phone={user.phone} address={user.address} />
         ))}
           
-    </>
+    </div>
   );
 }
 
