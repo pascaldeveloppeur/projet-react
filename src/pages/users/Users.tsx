@@ -1,5 +1,7 @@
-import User from "../components/User";
+import User from "../../components/User";
 import { useState } from 'react';
+import { USERS } from "../../utils/data";
+
 
 type User = {
     _id:string;  
@@ -11,12 +13,10 @@ type User = {
     address: string;
   };
 
-type UsersProps = {
-    users: User[];
-};
 
-function Users({users}: UsersProps) {
-  const [usersSorted, setUsersSorted] = useState(users); 
+
+function Users() {
+  const [usersSorted, setUsersSorted] = useState<User[]>(USERS); 
   const [alphabetOrder, sortALphabetOrder] = useState(1);  
   const sortBy = (field: string, value: string) => {
     console.log(field, value);
@@ -59,7 +59,7 @@ function Users({users}: UsersProps) {
   };
      
   return (
-    <section >
+    <section className="container mx-auto">
       <div className="flex justify-end items-center my-2 text-sm gap-2">
         <span>Trier par</span>
         <button type="button" className="border border-gray-100  bg-green-50 rounded-md px-2 py-1 text-xs"
