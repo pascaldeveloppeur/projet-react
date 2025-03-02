@@ -11,7 +11,7 @@ _id?:string;
 function User(props: Props) {
   return (
     <>
-        <article className="bg-gray-400 border-gray-800 px-1.5 rounded-md">
+        <article className="bg-gray-400 border-gray-800 px-1.5 rounded-md" key={props._id}>
        
                 <h3>{props.name} {props.age}</h3>
                 <p>{props.gender}</p>
