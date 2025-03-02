@@ -16,6 +16,7 @@ type UsersProps = {
 
 function Users(props: UsersProps) {
   //destructure the props
+  // const users = props.users;
     const {users} = props;
   return (
     <div className="grid md:grid-cols-3 gap-4 my-2">
